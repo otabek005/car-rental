@@ -1,0 +1,399 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#cars{
+    padding-top: 133px;
+}
+
+.choose-car{
+    h3{
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    p{
+        color: #555;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        width: 505px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .buttons{
+        text-align: center;
+        button{
+            @extend %button;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+        button:hover{
+            background-color: #299764;
+            color: white;
+            transition: all 0.1s linear;
+        }
+    }
+
+    .choose-car--item2{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        li{
+            cursor: pointer;
+            border-radius: 30px;
+            width: 387px;
+            padding: 30px 24px;
+            background: #F5F5F5;
+            list-style-type: none;
+
+            h3{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: start;
+                margin-bottom: 10px;
+            }
+
+            p{
+                text-align: left;
+                color: #555;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                margin-bottom: 16px;
+                line-height: normal;
+            }
+
+            img{
+                
+                padding-right: 30px;
+                width: 387px;
+                margin-bottom: 16px;
+            }
+
+            div{
+                display: flex;
+
+                p{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            &:hover{
+                background-color: #299764;
+                transition: all 0.2s linear;
+                transform: scale(1.1)
+            }
+
+            &:hover > h3{
+                color: white;
+                transition: all 0.1s linear;
+            }
+
+            &:hover > p{
+                color: white;
+                transition: all 0.1s linear;
+            }
+
+            &:hover > div > p{
+                color: white;
+                transition: all 0.1s linear;
+
+                span > svg > path{
+                    fill: white
+                }
+            }
+        }
+    }
+
+    .view-cars{
+        @extend %button;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 40px;
+        cursor: pointer;
+
+        &:hover{
+            background: #299764;
+            color: white;
+            transition: all 0.2s linear;
+        }
+    }
+}
+
+
+#Google{
+    margin-top: 160px;
+    background: #F5F5F5;
+    padding: 100px 0;
+
+    .google-wrapper{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        align-items: center;
+
+        .google-box1{
+            height: 479px;
+            width: 460px;
+            background: white;
+            padding: 85px 70px;
+
+
+            & > p:first-child{
+                cursor: pointer;
+                color: #4285F4;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 16px;
+            }
+
+            & > h3{
+                width: 300px;
+                color: #000;
+                font-family: Montserrat;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 50px; /* 131.579% */
+                padding-bottom: 30px;
+                border-bottom: 2px solid black;
+                margin-bottom: 30px;
+            }
+
+            & > p:nth-child(3){
+                color: #555;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+
+            & > button{
+                cursor: pointer;
+                padding: 18px 50px;
+                border-radius: 100px;
+                border: 1.5px solid #F9ED32;
+                background: #FFF;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                 background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+
+        .google-box2{
+            background-color:#299764;
+            width: 760px;
+            height: 479px;
+            padding: 50px 40px;
+            overflow-x: scroll;
+            .insta{
+                .insta-wrapper{
+                    display: flex;
+                    gap: 200px;
+
+                    .insta-slide{
+                        background-color: white;
+                        width: 480px;
+                        padding: 24px;
+                        
+                        & > div:first-child{
+                            display: flex;
+                            gap: 12px;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-bottom: 14px;
+
+                            div > h4{
+                                color: #000;
+                                font-family: Montserrat;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+
+                            div > p{
+                                color: #555;
+                                font-family: Montserrat;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+
+                        .tex{
+                            color: #000;
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 20px; /* 142.857% */
+                            padding-bottom: 25px;
+                            border-bottom: 1px solid black;
+                            margin-bottom: 25px;
+                        }
+
+                        & > div:last-child{
+                            display: flex;
+                            gap: 16px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+#logos{
+    margin-top: 160px;
+    
+    .logos-wrapper{
+        h3{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 34px;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+        }
+    }
+}
+
+#service{
+    margin-top: 160px;
+    margin-bottom: 160px;
+
+   .service-wrapper{
+        .service-box1{
+            margin-bottom: 40px;
+            h3{
+                color: #000;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p{
+                width: 684px;
+                color: #555;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+                margin: 0 auto;
+            }
+        }
+
+        .service-box2{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                flex-wrap: wrap;
+                
+                li{
+                    display: flex;
+                    width: 590px;
+                    list-style-type: none;
+                    padding: 40px 32px;
+                    background: #F5F5F5;
+                    border-radius: 30px;
+                    justify-content: space-between;
+
+                    h3{
+                        width: 211px;
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-bottom: 10px;
+                    }
+
+                    p{
+                        width: 304px;
+                        color: #555;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 150% */
+                    }
+
+                    &:hover{
+                        background: #299764;
+                        transition: all 0.2s linear;
+
+                        h3{
+                            color: white;
+                        }
+
+                        p{
+                            color: white;
+                        }
+
+                        span > svg > path{
+                            fill: white;
+                        }
+                    }
+                }
+            }
+        }
+   }
+}
+
