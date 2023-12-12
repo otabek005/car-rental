@@ -4,3 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: #1C1C1C;
+        color: white;
+    }
+}

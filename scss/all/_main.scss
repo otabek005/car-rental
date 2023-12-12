@@ -206,16 +206,13 @@ main {
                 padding: 18px 50px;
                 border-radius: 100px;
                 border: 1.5px solid #F9ED32;
-                background: #FFF;
                 font-family: Montserrat;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                 background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
                 background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: red;
             }
         }
 
@@ -397,3 +394,483 @@ main {
    }
 }
 
+.rental-wrapper{
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1.5px solid #E5E7EA;
+    background: #FFF;
+    padding: 40px 32px;
+
+    .rental-box1{
+        h3{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+
+        p{
+            width: 590px;
+            color: #555;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            margin-bottom: 98px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            gap: 10px;
+
+            li{
+                width: 200px;
+                height: 160px;
+                border-radius: 16px;
+                background: #F5F5F5;
+                padding: 15px;
+                list-style-type: none;
+                span{
+                    margin-left: 130px;
+                }
+
+                p{
+                    width: 170px;
+                    margin-top: 30px;
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px; /* 137.5% */
+                }
+
+                &:hover{
+                    background: #299764;
+                    transition: all 0.2s linear;
+                    p{
+                        color: white;
+                        transition: all 0.1s linear;
+                    }
+
+                    span{
+                        svg{
+                            path{
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rental-box2{
+        position: relative;
+        padding-right: 80px;
+        div{
+            background: #299764;
+            width: 300px;
+            height: 300px;
+            flex-shrink: 0;
+            border-radius: 50%;
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            right: 50px;
+        }
+    }
+}
+
+footer{
+    border-top: 1.5px solid #E5E7EA;
+    background: #FFF;
+    padding: 40px 0;
+
+    .foter-wrapper{
+        .foter-box1{
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+            gap:110px;
+            padding-bottom: 44px;
+            border-bottom: 1px solid black;
+            margin-bottom: 40px ;
+
+            div{
+                width: 240px;
+                p{
+                    color: #555;
+                    font-family: Montserrat;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 166.667% */
+                }
+            }
+
+            li{
+                list-style-type: none;
+                margin-bottom: 15px;
+
+                a{
+                    color: #555;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            li:first-child{
+                margin-bottom: 16px;
+                a{
+                    color: black;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .foter-box2{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            p{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 150% */
+            }
+
+            ul{
+                li{
+                    list-style-type: none;
+                    margin-bottom: 14px;
+                    a{
+                        color: #555;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+
+                li:first-child{
+                    margin-bottom: 20px;
+                    a{
+                        color: black;
+
+                        font-size: 16px;
+                    }
+                }
+
+                p{
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-bottom: 22px;
+                }
+
+                div{
+                    display: flex;
+                    gap: 20px;
+
+                    span:nth-child(1):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill: red;
+                            }
+                        }
+                    }
+
+                    span:nth-child(2):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill:rgb(0, 128, 255);
+                            }
+                        }
+                    }
+                    span:nth-child(3):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill: blue;
+                            }
+                        }
+                    }
+                    span:nth-child(4):hover{
+                        cursor: pointer;
+                        svg{
+                            rect{
+                                fill: rgb(10, 235, 66);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (prefers-color-scheme: dark){
+    .choose-car{
+        .choose-car--item1{
+            h3{
+                color: white ;
+            }
+
+            p{
+                color: white;
+            }
+
+            .buttons{
+                button{
+                    color: white;
+                }
+            }
+        }
+
+        .choose-car--item2{
+            li{
+                background: #272727;
+                h3{
+                    color: white;
+                }
+
+                p{
+                    color: white;
+                }
+
+                div{
+                    p{
+                        color: white;
+                    }
+
+                    span > svg > path{
+                        fill: white;
+                    }
+                }
+            }
+        }
+
+        button{
+            color: white !important;
+        }
+    }
+
+    #Google{
+        background: #272727;
+        .google-box1{
+            background: #1C1C1C !important ;
+            p{
+                span{
+                    background-color: white !important;
+                    border-radius: 50%;
+                    padding: 5px 8px;
+                }
+            } 
+
+            h3{
+                color: white !important;
+            }
+
+            & > p:nth-child(3){
+                color: white !important;
+            }
+
+            .insta_button{
+                background: white !important;
+            }
+        }
+
+        .google-box2{
+            .insta-wrapper{
+                .insta-slide{
+                    background: #1C1C1C !important;
+                    border-radius: 16px;
+
+                    div{
+                        h4{
+                            color: white !important;
+                        }
+                        p{
+                            color: rgba(255, 255, 255, 0.567) !important;
+                        }
+                    }
+
+                    p{
+                        color: white !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #logos{
+        .logos-wrapper{
+            h3{
+                color: white;
+            }
+
+            ul{
+                li{
+                    img{
+                        mix-blend-mode:hard-light;
+                    }
+                }
+            }
+        }
+    }
+
+    #service{
+        .service-wrapper{
+            .service-box1{
+                p{
+                    color: white;
+                }
+
+                h3{
+                    color: white;
+                }
+            }
+        }
+
+        .service-box2{
+            ul{
+                li{
+                    background: #272727 !important; 
+                    div{
+                        h3{
+                            color: white !important;
+                        }
+
+                        p{
+                            color: white !important;
+                        }
+                    }
+
+                    &:hover{
+                        background-color: #299764 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .rental-wrapper{
+        background: #1C1C1C;
+        border: 1.5px solid #333;
+
+        .rental-box1{
+            h3{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+
+            ul{
+                li{
+                    background: #272727;
+
+                    span{
+                        svg{
+                            path{
+                                fill: white;
+                            }
+                        }
+                    }
+
+                    p{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer{
+        border-top: 1.5px solid #333;
+        background: #1C1C1C;
+
+        .foter-wrapper{
+            .foter-box1{
+                div{
+                    p{
+                        color: white;
+                    }
+                }
+
+                ul{
+                    li{
+                        a{
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+
+            .foter-box2{
+                p{
+                    color: white;
+                }
+
+                ul{
+                    li{
+                        a{
+                            color: white !important;
+                        }
+                    }
+
+                    p{
+                        color: white;
+                    }
+
+                    div{
+
+                        span{
+                            svg{
+                                rect{
+                                    fill: white;
+                                }
+    
+                                path{
+                                    fill: black;
+                                }
+                            }
+                            &:hover{
+                                svg{
+                                    path{
+                                        fill: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

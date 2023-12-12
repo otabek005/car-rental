@@ -96,3 +96,30 @@ header {
         }
     }
 }
+
+@media (prefers-color-scheme: dark){
+    
+    .ul-list > li > a{
+        color: white !important;
+    }
+
+    .box1 > h3{
+        color: white !important;
+    }
+
+    .box2 > button{
+        background: #272727 !important;
+
+        span > svg > path{
+            fill: white;
+        }
+
+        &:hover{
+            background: #077743 !important;
+            transition: all 0.2s linear;
+            span > svg > path{
+                fill: white ;
+            }
+        }
+    }
+}

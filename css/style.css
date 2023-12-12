@@ -315,6 +315,12 @@ template {
   text-decoration: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1C1C1C;
+    color: white;
+  }
+}
 .choose-car .view-cars, .choose-car .buttons button {
   padding: 19px 40px;
   color: #FFF;
@@ -418,6 +424,27 @@ header .nav .ull-list .box3 > button:hover {
   transition: all 0.5s ease;
 }
 
+@media (prefers-color-scheme: dark) {
+  .ul-list > li > a {
+    color: white !important;
+  }
+  .box1 > h3 {
+    color: white !important;
+  }
+  .box2 > button {
+    background: #272727 !important;
+  }
+  .box2 > button span > svg > path {
+    fill: white;
+  }
+  .box2 > button:hover {
+    background: #077743 !important;
+    transition: all 0.2s linear;
+  }
+  .box2 > button:hover span > svg > path {
+    fill: white;
+  }
+}
 main {
   width: 100%;
   min-height: 100vh;
@@ -601,16 +628,14 @@ main {
   padding: 18px 50px;
   border-radius: 100px;
   border: 1.5px solid #F9ED32;
-  background: #FFF;
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
-  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: red;
 }
 #Google .google-wrapper .google-box2 {
   background-color: #299764;
@@ -760,6 +785,336 @@ main {
   fill: white;
 }
 
+.rental-wrapper {
+  margin-bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: 1.5px solid #E5E7EA;
+  background: #FFF;
+  padding: 40px 32px;
+}
+.rental-wrapper .rental-box1 h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.rental-wrapper .rental-box1 p {
+  width: 590px;
+  color: #555;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 98px;
+}
+.rental-wrapper .rental-box1 ul {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  gap: 10px;
+}
+.rental-wrapper .rental-box1 ul li {
+  width: 200px;
+  height: 160px;
+  border-radius: 16px;
+  background: #F5F5F5;
+  padding: 15px;
+  list-style-type: none;
+}
+.rental-wrapper .rental-box1 ul li span {
+  margin-left: 130px;
+}
+.rental-wrapper .rental-box1 ul li p {
+  width: 170px;
+  margin-top: 30px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+.rental-wrapper .rental-box1 ul li:hover {
+  background: #299764;
+  transition: all 0.2s linear;
+}
+.rental-wrapper .rental-box1 ul li:hover p {
+  color: white;
+  transition: all 0.1s linear;
+}
+.rental-wrapper .rental-box1 ul li:hover span svg path {
+  fill: white;
+}
+.rental-wrapper .rental-box2 {
+  position: relative;
+  padding-right: 80px;
+}
+.rental-wrapper .rental-box2 div {
+  background: #299764;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.rental-wrapper .rental-box2 img {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+footer {
+  border-top: 1.5px solid #E5E7EA;
+  background: #FFF;
+  padding: 40px 0;
+}
+footer .foter-wrapper .foter-box1 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
+}
+footer .foter-wrapper .foter-box1 div {
+  width: 240px;
+}
+footer .foter-wrapper .foter-box1 div p {
+  color: #555;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+footer .foter-wrapper .foter-box1 li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+footer .foter-wrapper .foter-box1 li a {
+  color: #555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .foter-wrapper .foter-box1 li:first-child {
+  margin-bottom: 16px;
+}
+footer .foter-wrapper .foter-box1 li:first-child a {
+  color: black;
+  font-size: 16px;
+}
+footer .foter-wrapper .foter-box2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .foter-wrapper .foter-box2 p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+footer .foter-wrapper .foter-box2 ul li {
+  list-style-type: none;
+  margin-bottom: 14px;
+}
+footer .foter-wrapper .foter-box2 ul li a {
+  color: #555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .foter-wrapper .foter-box2 ul li:first-child {
+  margin-bottom: 20px;
+}
+footer .foter-wrapper .foter-box2 ul li:first-child a {
+  color: black;
+  font-size: 16px;
+}
+footer .foter-wrapper .foter-box2 ul p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 22px;
+}
+footer .foter-wrapper .foter-box2 ul div {
+  display: flex;
+  gap: 20px;
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(1):hover {
+  cursor: pointer;
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(1):hover svg rect {
+  fill: red;
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(2):hover {
+  cursor: pointer;
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(2):hover svg rect {
+  fill: rgb(0, 128, 255);
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(3):hover {
+  cursor: pointer;
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(3):hover svg rect {
+  fill: blue;
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(4):hover {
+  cursor: pointer;
+}
+footer .foter-wrapper .foter-box2 ul div span:nth-child(4):hover svg rect {
+  fill: rgb(10, 235, 66);
+}
+
+@media (prefers-color-scheme: dark) {
+  .choose-car .choose-car--item1 h3 {
+    color: white;
+  }
+  .choose-car .choose-car--item1 p {
+    color: white;
+  }
+  .choose-car .choose-car--item1 .buttons button {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li {
+    background: #272727;
+  }
+  .choose-car .choose-car--item2 li h3 {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li p {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li div p {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li div span > svg > path {
+    fill: white;
+  }
+  .choose-car button {
+    color: white !important;
+  }
+  #Google {
+    background: #272727;
+  }
+  #Google .google-box1 {
+    background: #1C1C1C !important;
+  }
+  #Google .google-box1 p span {
+    background-color: white !important;
+    border-radius: 50%;
+    padding: 5px 8px;
+  }
+  #Google .google-box1 h3 {
+    color: white !important;
+  }
+  #Google .google-box1 > p:nth-child(3) {
+    color: white !important;
+  }
+  #Google .google-box1 .insta_button {
+    background: white !important;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide {
+    background: #1C1C1C !important;
+    border-radius: 16px;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide div h4 {
+    color: white !important;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide div p {
+    color: rgba(255, 255, 255, 0.567) !important;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide p {
+    color: white !important;
+  }
+  #logos .logos-wrapper h3 {
+    color: white;
+  }
+  #logos .logos-wrapper ul li img {
+    mix-blend-mode: hard-light;
+  }
+  #service .service-wrapper .service-box1 p {
+    color: white;
+  }
+  #service .service-wrapper .service-box1 h3 {
+    color: white;
+  }
+  #service .service-box2 ul li {
+    background: #272727 !important;
+  }
+  #service .service-box2 ul li div h3 {
+    color: white !important;
+  }
+  #service .service-box2 ul li div p {
+    color: white !important;
+  }
+  #service .service-box2 ul li:hover {
+    background-color: #299764 !important;
+  }
+  .rental-wrapper {
+    background: #1C1C1C;
+    border: 1.5px solid #333;
+  }
+  .rental-wrapper .rental-box1 h3 {
+    color: white;
+  }
+  .rental-wrapper .rental-box1 p {
+    color: white;
+  }
+  .rental-wrapper .rental-box1 ul li {
+    background: #272727;
+  }
+  .rental-wrapper .rental-box1 ul li span svg path {
+    fill: white;
+  }
+  .rental-wrapper .rental-box1 ul li p {
+    color: white;
+  }
+  footer {
+    border-top: 1.5px solid #333;
+    background: #1C1C1C;
+  }
+  footer .foter-wrapper .foter-box1 div p {
+    color: white;
+  }
+  footer .foter-wrapper .foter-box1 ul li a {
+    color: white !important;
+  }
+  footer .foter-wrapper .foter-box2 p {
+    color: white;
+  }
+  footer .foter-wrapper .foter-box2 ul li a {
+    color: white !important;
+  }
+  footer .foter-wrapper .foter-box2 ul p {
+    color: white;
+  }
+  footer .foter-wrapper .foter-box2 ul div span svg rect {
+    fill: white;
+  }
+  footer .foter-wrapper .foter-box2 ul div span svg path {
+    fill: black;
+  }
+  footer .foter-wrapper .foter-box2 ul div span:hover svg path {
+    fill: white;
+  }
+}
 footer {
   width: 100%;
 }
