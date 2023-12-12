@@ -868,6 +868,115 @@ main {
   right: 50px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .choose-car .choose-car--item1 h3 {
+    color: white;
+  }
+  .choose-car .choose-car--item1 p {
+    color: white;
+  }
+  .choose-car .choose-car--item1 .buttons button {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li {
+    background: #272727;
+  }
+  .choose-car .choose-car--item2 li h3 {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li p {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li div p {
+    color: white;
+  }
+  .choose-car .choose-car--item2 li div span > svg > path {
+    fill: white;
+  }
+  .choose-car button {
+    color: white !important;
+  }
+  #Google {
+    background: #272727;
+  }
+  #Google .google-box1 {
+    background: #1C1C1C !important;
+  }
+  #Google .google-box1 p span {
+    background-color: white !important;
+    border-radius: 50%;
+    padding: 5px 8px;
+  }
+  #Google .google-box1 h3 {
+    color: white !important;
+  }
+  #Google .google-box1 > p:nth-child(3) {
+    color: white !important;
+  }
+  #Google .google-box1 .insta_button {
+    background: white !important;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide {
+    background: #1C1C1C !important;
+    border-radius: 16px;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide div h4 {
+    color: white !important;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide div p {
+    color: rgba(255, 255, 255, 0.567) !important;
+  }
+  #Google .google-box2 .insta-wrapper .insta-slide p {
+    color: white !important;
+  }
+  #logos .logos-wrapper h3 {
+    color: white;
+  }
+  #logos .logos-wrapper ul li img {
+    mix-blend-mode: hard-light;
+  }
+  #service .service-wrapper .service-box1 p {
+    color: white;
+  }
+  #service .service-wrapper .service-box1 h3 {
+    color: white;
+  }
+  #service .service-box2 ul li {
+    background: #272727 !important;
+  }
+  #service .service-box2 ul li div h3 {
+    color: white !important;
+  }
+  #service .service-box2 ul li div p {
+    color: white !important;
+  }
+  #service .service-box2 ul li:hover {
+    background-color: #299764 !important;
+  }
+  .rental-wrapper {
+    background: #1C1C1C;
+    border: 1.5px solid #333;
+  }
+  .rental-wrapper .rental-box1 h3 {
+    color: white;
+  }
+  .rental-wrapper .rental-box1 p {
+    color: white;
+  }
+  .rental-wrapper .rental-box1 ul li {
+    background: #272727;
+  }
+  .rental-wrapper .rental-box1 ul li span svg path {
+    fill: white;
+  }
+  .rental-wrapper .rental-box1 ul li p {
+    color: white;
+  }
+}
+footer {
+  width: 100%;
+}
+
 footer {
   border-top: 1.5px solid #E5E7EA;
   background: #FFF;
@@ -983,109 +1092,6 @@ footer .foter-wrapper .foter-box2 ul div span:nth-child(4):hover svg rect {
 }
 
 @media (prefers-color-scheme: dark) {
-  .choose-car .choose-car--item1 h3 {
-    color: white;
-  }
-  .choose-car .choose-car--item1 p {
-    color: white;
-  }
-  .choose-car .choose-car--item1 .buttons button {
-    color: white;
-  }
-  .choose-car .choose-car--item2 li {
-    background: #272727;
-  }
-  .choose-car .choose-car--item2 li h3 {
-    color: white;
-  }
-  .choose-car .choose-car--item2 li p {
-    color: white;
-  }
-  .choose-car .choose-car--item2 li div p {
-    color: white;
-  }
-  .choose-car .choose-car--item2 li div span > svg > path {
-    fill: white;
-  }
-  .choose-car button {
-    color: white !important;
-  }
-  #Google {
-    background: #272727;
-  }
-  #Google .google-box1 {
-    background: #1C1C1C !important;
-  }
-  #Google .google-box1 p span {
-    background-color: white !important;
-    border-radius: 50%;
-    padding: 5px 8px;
-  }
-  #Google .google-box1 h3 {
-    color: white !important;
-  }
-  #Google .google-box1 > p:nth-child(3) {
-    color: white !important;
-  }
-  #Google .google-box1 .insta_button {
-    background: white !important;
-  }
-  #Google .google-box2 .insta-wrapper .insta-slide {
-    background: #1C1C1C !important;
-    border-radius: 16px;
-  }
-  #Google .google-box2 .insta-wrapper .insta-slide div h4 {
-    color: white !important;
-  }
-  #Google .google-box2 .insta-wrapper .insta-slide div p {
-    color: rgba(255, 255, 255, 0.567) !important;
-  }
-  #Google .google-box2 .insta-wrapper .insta-slide p {
-    color: white !important;
-  }
-  #logos .logos-wrapper h3 {
-    color: white;
-  }
-  #logos .logos-wrapper ul li img {
-    mix-blend-mode: hard-light;
-  }
-  #service .service-wrapper .service-box1 p {
-    color: white;
-  }
-  #service .service-wrapper .service-box1 h3 {
-    color: white;
-  }
-  #service .service-box2 ul li {
-    background: #272727 !important;
-  }
-  #service .service-box2 ul li div h3 {
-    color: white !important;
-  }
-  #service .service-box2 ul li div p {
-    color: white !important;
-  }
-  #service .service-box2 ul li:hover {
-    background-color: #299764 !important;
-  }
-  .rental-wrapper {
-    background: #1C1C1C;
-    border: 1.5px solid #333;
-  }
-  .rental-wrapper .rental-box1 h3 {
-    color: white;
-  }
-  .rental-wrapper .rental-box1 p {
-    color: white;
-  }
-  .rental-wrapper .rental-box1 ul li {
-    background: #272727;
-  }
-  .rental-wrapper .rental-box1 ul li span svg path {
-    fill: white;
-  }
-  .rental-wrapper .rental-box1 ul li p {
-    color: white;
-  }
   footer {
     border-top: 1.5px solid #333;
     background: #1C1C1C;
@@ -1115,10 +1121,6 @@ footer .foter-wrapper .foter-box2 ul div span:nth-child(4):hover svg rect {
     fill: white;
   }
 }
-footer {
-  width: 100%;
-}
-
 .swiper {
   width: 100%;
   height: 500px;
